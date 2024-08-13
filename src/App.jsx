@@ -8,26 +8,27 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <header> <h1>🔥Fireplace Palace</h1></header>
+    <div className="wrapper">
+        <main>
+            <section className="hero">
+                <div className= "hero-image">
+                    <img src='./src/images/hero-mobile.png' alt="living-room" />
+                </div>
+                <div className="hero-banner">
+                    <h3>Discover the<br /> Perfect Fireplace...</h3>
+                    <h4>Book consultation: <span>0800 00 1066</span></h4>
+                </div>
+            </section>
+            <section className="how-it-works">
+                <header className="how-header"></header>
+                <div className="give-us-a-call"></div>
+                <div className="we-come-to-you"></div>
+                <div className="we-recommend"></div>
+            </section>
+            <footer>footer</footer>
+        </main>
+    </div>
     </>
   )
 }

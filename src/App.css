@@ -1,42 +1,70 @@
-#root {
-  max-width: 1280px;
+body    {
+  font-family: Aleo;
+  max-width: auto;
+  box-sizing: border-box;
+  font-size: 10px;
+  margin: 0; 
+}
+
+header  {
+  padding: 10px 15px;
+}
+
+main {
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  grid-template-rows: 1fr 3fr;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.hero-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.hero-banner {
+  padding: 20px;
+  background-color: #f0911b;
 }
 
-.card {
-  padding: 2em;
+.hero-banner h3 {
+  font-size: 2rem;
 }
 
-.read-the-docs {
-  color: #888;
+.hero-banner h4 {
+  font-size: 1rem;
+}
+
+.hero-banner span {
+  font-size: 1rem;
+  color: #ffffff
+}
+
+.how-it-works {
+  display: grid;
+  grid-template-rows: 75px 1fr 1fr 1fr;
+  height: 80rem;
+  border: 3px solid black;
+}
+
+.how-it-works header{
+  border: 2px solid blue;
+}
+
+.give-us-a-call {
+  border: 2px solid purple;
+}
+
+.we-come-to-you {
+  border: 2px solid red;
+}
+
+.we-recommend {
+  border: 2px solid green;
 }
